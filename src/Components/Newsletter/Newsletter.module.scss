@@ -1,0 +1,49 @@
+@import '../../Assets/Fonts.module.scss';
+
+.newsletterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 15vh 0;
+    background-image: url('../../Assets/newsletterbg.jpg');
+    background-position: center;
+
+    h2 {
+       font-family: 'Lobster', sans-serif; 
+       font-size: 2em;
+       color: white;
+    }
+
+    p {
+        color: white;
+        margin-bottom: 2vh;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            height: 5vh;
+            width: 5vh;
+            background-color: lightgrey;
+            border: none;
+        }
+
+        input {
+            border: none;
+            height: 5vh;
+            width: 40vw;
+            padding-left: 2vw;
+        }
+
+        button {
+            height: 5vh;
+            width: 10vw;
+            border: none;
+            background-color: rgb(63, 114, 138);
+            color: white;
+        }
+    }
+}

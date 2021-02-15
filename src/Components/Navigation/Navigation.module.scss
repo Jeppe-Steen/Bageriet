@@ -1,0 +1,43 @@
+@import '../../Assets/Fonts.module.scss';
+
+.navigation {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    
+    ul {
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+
+        .links {
+            color: white;
+            text-decoration: none;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 0.5em;
+            color: white;
+
+            &:nth-child(3) {
+                font-size: 3em;
+                margin: 0 1em;
+            }
+        }
+
+        .logo {
+            font-family: 'Lobster', 'Open sans', sans-serif;
+        }
+    }
+}

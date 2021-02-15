@@ -1,0 +1,51 @@
+.articleContainer {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+    article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 32%;
+        margin: auto;
+        padding: 20px;
+        height: 45vh;
+        text-align: center;
+        position: relative;
+
+        .imageContainer {
+            width: 100%;
+            height: 20vh;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 150%;
+            }
+        }
+
+        h3 {
+            margin-bottom: 1vh;
+        }
+
+        p {
+            color: grey;
+        }
+
+        button {
+            position: absolute;
+            padding: 5px 20px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+            bottom: 20px;
+        }
+    }
+}

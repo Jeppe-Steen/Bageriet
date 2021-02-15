@@ -1,0 +1,61 @@
+@import '../../Assets/Fonts.module.scss';
+$laptop: 1200px;
+
+.newsSection {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10vh;
+
+    .newsHeading {
+        font-family: 'Lobster', sans-serif;
+        font-size: 2em;
+        color: black;
+        margin-bottom: 5vh;
+    }
+
+    .newsTeaser{
+        margin-bottom: 10vh;
+        color: grey;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+        }
+
+        article {
+            width: 70vw;
+            height: fit-content;
+            margin: 0 10px;
+            padding: 20px;
+
+            @media (min-width: $laptop) {
+                width: 20vw;
+            }
+
+            img {
+                width: 70%;
+                border-radius: 50%;
+                margin-bottom: 2vh;
+            }
+
+            h3 {
+                margin-bottom: 1vh;
+                font-size: 1em;
+                color: #333;
+            }
+
+            p {
+                font-size: 1em;
+                color: grey;
+            }
+        }
+    }
+}

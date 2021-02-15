@@ -1,0 +1,15 @@
+.contactForm {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; 
+    width: 40%;
+    padding: 10px;
+
+    input {
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        resize: none;
+    }
+}

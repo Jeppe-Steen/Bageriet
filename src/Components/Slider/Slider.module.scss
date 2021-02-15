@@ -1,0 +1,92 @@
+@import '../../Assets/Fonts.module.scss';
+
+$laptop: 1200px;
+
+.slider {
+    width: 100%;
+    height: 50vh;        
+    overflow: hidden;
+    position: relative;
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+    @media (min-width: $laptop) {
+        height: 65vh;
+    }
+
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+
+        @media (min-width: $laptop) {
+            left: 0;
+            transform: unset;
+            width: 100%;
+        }
+    }
+
+    .heading {
+        font-family: 'Lobster', 'Open sans', sans-serif;
+        z-index: 1;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4em;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0 , 0.5);
+        text-align: center;
+    }
+
+    .btn {
+        height: 30px;
+        z-index: 10;
+        margin: 0 5vw;
+        border: none;
+        background-color: transparent;
+        fill: white;
+        cursor: pointer;
+
+        &:first-of-type {
+            transform: rotate(180deg);
+        }
+
+        @media (min-width: $laptop) {
+            height: 50px;
+        }
+    } 
+
+    span {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 5vh;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+
+        .marker {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 0 10px;
+            
+            &.active {
+                background-color: lightgreen;
+            }
+
+            @media (min-width: $laptop) {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
